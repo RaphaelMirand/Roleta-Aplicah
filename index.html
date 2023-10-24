@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta</title>
+    <link rel="stylesheet" href="estilo_roleta.css">
+</head>
+
+<body>
+    <div class="gg-modal">
+        <div class="gg-modal__overlay"></div>
+        <div class="gg-modal__content">
+            <div class="gg-modal__column">
+                <div class="gg-wheel">
+                    <div class="gg-wheel__center"></div>
+                    <ul class="gg-list">
+                        <li><strong class="gg-list__content">R$ 100,00* OFF</strong></li>
+                        <li><strong class="gg-list__content">VOCÊ GANHOU 1 ANÁLISE EM SEU SITE!</strong></li>
+                        <li><strong class="gg-list__content">R$ 500,00* OFF</strong></li>
+                        <li><strong class="gg-list__content">GANHOU 1 E-BOOK!</strong></li>
+                        <li><strong class="gg-list__content">R$ 250,00* OFF</strong></li>
+                        <li><strong class="gg-list__content">VOCÊ GANHOU 5% OFF</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gg-modal__column">
+                <button class="gg-modal__close" onclick="fecharModal()"></button>
+                <h1 class="gg-modal__title"><span>RODE</span> A ROLETA</h1>
+                <p class="gg-modal__text">
+                    e aproveite a Black Friday na Aplicah com descontos e brindes que impulsionarão o seu
+                    crescimento
+                </p>
+
+                <form action="#" class="gg-modal__form">
+                    <label class="gg-modal__form__label">
+                        <input type="text" placeholder="Nome" id="gg-name" onKeyUp="handleChange()">
+                    </label>
+                    <label class="gg-modal__form__label">
+                        <input type="email" placeholder="E-mail" id="gg-email">
+                    </label>
+                    <button class="gg-modal__submit" id="gg-submit" onclick="rodarRoleta()" disabled>
+                        BOA SORTE!
+                    </button>
+                </form>
+
+                <small class="gg-modal__rules">
+                    * O valor é válido para desconto no fechamento de serviço Aplicah. ** Será considerado o e-mail
+                    com o resultado da primeira rodada.
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <script src="script_roleta.js"></script>
+</body>
+
+</html>
