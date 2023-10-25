@@ -194,7 +194,8 @@ body {
     transform: translate(-50%, -50%);
     z-index: 20;
     border-radius: 50%;
-    background: #FE5000;
+    background: url("data:image/svg+xml,%3Csvg xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' width='39.149' height='41.838' viewBox='0 0 39.149 41.838'%3E%3Cg id='Grupo_3197' data-name='Grupo 3197' transform='translate(10482.837 7)'%3E%3Cpath id='Caminho_4560' data-name='Caminho 4560' d='M4772.064,435.013l-.555-.054c-1.018.115-1.078,1.358-1.078,1.358l.04,3.26a1.548,1.548,0,0,0,.358,1.068,13.773,13.773,0,1,1-14.883.114,2.4,2.4,0,0,0,.563-1.034v-3.492c-.063-1.45-1.359-1.258-1.93-1.1a19.575,19.575,0,1,0,17.485-.118Z' transform='translate(-15226.701 -436.85)' fill='%23FFFFFF'%3E%3C/path%3E%3Cpath id='Caminho_4559' data-name='Caminho 4559' d='M5023.384,366.975h-1.733a1.366,1.366,0,0,1-1.362-1.27l-1.117-15.857a1.366,1.366,0,0,1,1.363-1.462h3.925a1.367,1.367,0,0,1,1.363,1.459l-1.075,15.857A1.367,1.367,0,0,1,5023.384,366.975Z' transform='translate(-15485.758 -355.385)' fill='%23FFFFFF'%3E%3C/path%3E%3Cellipse id='Elipse_31' data-name='Elipse 31' cx='3.151' cy='3.151' rx='3.151' ry='3.151' transform='translate(-10466.411 13.323)' fill='%23FFFFFF'%3E%3C/ellipse%3E%3C/g%3E%3C/svg%3E") no-repeat #FE5000 center;
+    background-size: 50px;
     pointer-events: none;
 }
 
@@ -313,4 +314,68 @@ body {
     text-transform: uppercase;
     font-weight: normal;
     font-size: 20px;
+}
+
+@media(max-width: 756px) {
+
+    .gg-modal__content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .gg-wheel {
+        height: 300px;
+        width: 300px;
+    }
+
+    .gg-wheel__center {
+        content: "";
+        height: 90px;
+        width: 90px;
+        border: 15px solid #303030;
+        background-size: 35px;
+    }
+
+    .gg-wheel__center:before {
+        border-top: 40px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 30px solid #303030;
+        border-left: 20px solid transparent;
+        top: -5px;
+    }
+
+    .gg-list__content,
+    .gg-list li:nth-child(2) strong {
+        font-size: 12px;
+    }
+
+    .gg-modal__column:first-child {
+        display: block;
+        height: 300px;
+        width: 300px;
+        padding: 0;
+        flex: unset;
+    }
+
+    .gg-modal__column {
+        position: relative;
+        flex: unset;
+        padding: 0 15px;
+    }
+
+    .gg-modal__title {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .gg-modal__text {
+        font-size: 15px;
+    }
+
+    .gg-modal__submit {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
